@@ -1,5 +1,7 @@
 # Sen SBFT Web
 
+Node version: 18.19.1
+
 ## Installation
 
 ```bash

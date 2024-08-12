@@ -10,13 +10,16 @@ import {
 } from 'antd';
 import { FC } from 'react';
 import { LuArrowLeftToLine } from 'react-icons/lu';
+import { useNavigate } from 'react-router-dom';
 import './styles.scss';
 
 const Login: FC = () => {
+  const navigate = useNavigate();
+
   return (
     <div className="login-container">
-      <div className="back-arrow">
-        <LuArrowLeftToLine size={24} />
+      <div className="back-arrow" onClick={() => navigate('/')}>
+        <LuArrowLeftToLine size={24} className="back-icon" />
         <span className="back-text">Quay lại</span>
       </div>
 

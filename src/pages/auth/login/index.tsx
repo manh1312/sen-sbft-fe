@@ -58,7 +58,12 @@ const Login: FC = () => {
                       Ghi nhớ đăng nhập
                     </Checkbox>
 
-                    <Button type="link">Quên mật khẩu?</Button>
+                    <Button
+                      type="link"
+                      onClick={() => navigate('/forgot-password')}
+                    >
+                      Quên mật khẩu?
+                    </Button>
                   </Flex>
 
                   <Form.Item>
